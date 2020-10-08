@@ -1,4 +1,4 @@
-package ru.job4j.condition;
+package ru.job4j.tracker;
 
 import static java.lang.Math.sqrt;
 import static java.lang.Math.pow;
@@ -6,7 +6,6 @@ import static java.lang.Math.pow;
 public class Point {
 
     private int x;
-
     private int y;
 
     public Point(int first, int second) {
@@ -19,8 +18,9 @@ public class Point {
     }
 
     public static void main(String[] args) {
-        Point a = new Point(0, 0);
-        Point b = new Point(0, 2);
+        Point a = new Point(5, 0);
+        Point b = new Point(4, 4);
+        Point c = new Point(1,5);
         double dist = a.distance(b);
         System.out.println(dist);
     }
