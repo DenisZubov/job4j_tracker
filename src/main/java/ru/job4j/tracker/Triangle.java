@@ -7,11 +7,6 @@ public class Triangle {
     private Point second;
     private Point third;
 
-    public Triangle(Point a, Point b, Point c) {
-        Point first = new Point(0, 0);
-        Point second = new Point(0, 0);
-        Point third = new Point(0, 0);
-    }
 
         public static double period ( double ab, double ac, double bc){
             double period = (ab + ac + bc)/2;
@@ -34,7 +29,7 @@ public class Triangle {
             return area;
         }
     public static void main(String[] args) {
-        Point x = new Point(0, 0);
+        Point x = new Point(1, 0);
         Point y = new Point(4, 0);
         Point z = new Point(0, 8);
         double rsl = area(x, y, z);
